@@ -1,0 +1,52 @@
+.top-image {
+  position: absolute;
+  right: 0;
+  width: 15%;
+}
+
+.bottom-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+}
+
+.starting-div,
+main {
+  height: 100%;
+}
+
+.starting-div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.start-text-div {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.start-text-div > button {
+  border-style: none;
+  background-color: #4d5b9e;
+  color: #f5f7fb;
+  font-size: 17px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 15px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+}
+
+.start-text-div > p {
+  font-family: "Inter", sans-serif;
+  color: #293264;
+}
+
+.start-text-div > h1 {
+  color: #293264;
+}

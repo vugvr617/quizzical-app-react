@@ -1,0 +1,41 @@
+.answers-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.answer label{
+    display: inline-block;
+    color: #293264;
+    font-weight: 500;
+    border: 2px solid #293264;
+    border-radius: 8px;
+    padding: 0.3em 1em;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    font-size: medium;
+    min-width: 80px;
+}
+
+.answer input{
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.answer input:checked + label{
+    transition: 0.2s;
+    background-color: #D6DBF5;
+    border-color: #D6DBF5;
+}
+
+@media (max-width: 600px){
+    .answers-div{
+        flex-direction: column;
+    }
+    .answer label{
+        width: 100%;
+    }
+}
