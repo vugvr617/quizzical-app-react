@@ -23,11 +23,7 @@ function App() {
     startApp(true)
   }
 
-  const checkAnswers = () => {
-
-  }
-
-  if (isDataLoaded) {
+  if (isDataLoaded && isAppStarted) {
     return (
       <ContextProvider>
         <div className='main-content'>
@@ -51,7 +47,7 @@ function App() {
 
   return (
     <Fragment>
-      {/* {!isAppStarted && <HomePage handleStartClick={startFunction}></HomePage>} */}
+       {!isAppStarted && <HomePage handleStartClick={startFunction}></HomePage>} }
     </Fragment>
   );
 }
