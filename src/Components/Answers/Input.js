@@ -8,7 +8,7 @@ export default function Input(props) {
 
     const [checkcorrect, setCorrect] = useState(false);
 
-    try {
+    if (inputRef.current) {
         if (props.isCorrect && ctx.isAnswersShown) {
             var labelStyle = {
                 backgroundColor: (inputRef.current.checked) ? "#94D7A2" : "#F8BCBC",
@@ -21,11 +21,21 @@ export default function Input(props) {
                 ctx.checkAnswers()
             }
         }
-    } catch {
     }
+    
     const setChecked = () => {
         inputRef.current.checked = true;
     }
+
+    const unsetChecked = () => {
+        inputRef.current.checked = false;
+    }
+
+    if (ctx.isPlayedAgain) {
+        unsetChecked();
+        ctx.setGameRestarted(false)
+    }
+
     return (
         <div>
             <div className='answer'>

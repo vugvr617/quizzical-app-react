@@ -50,6 +50,17 @@ hr {
 }
 
 @media (max-width: 600px) {
+  .button-div{
+    font-size: smaller;
+  }
+  .play-again-button{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: x-small;
+    width: 150px;
+    height: 50px;
+  }
   .questions-div h2 {
     font-size: large;
   }

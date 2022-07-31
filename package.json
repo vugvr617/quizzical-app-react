@@ -1,4 +1,5 @@
 {
+  "homepage": "https://quizzical.vercel.app/",
   "name": "quizzical-app-react",
   "version": "0.1.0",
   "private": true,

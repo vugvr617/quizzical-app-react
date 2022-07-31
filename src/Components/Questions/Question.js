@@ -1,4 +1,3 @@
-import React, { Fragment } from "react"
 import Answers from "../Answers/Answers"
 import "./Question.css"
 import { nanoid } from 'nanoid'
